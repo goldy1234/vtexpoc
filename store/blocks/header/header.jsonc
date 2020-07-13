@@ -8,19 +8,17 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
+      // "flex-layout.row#2-desktop",
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
-
   "flex-layout.row#1-desktop": {
     "children": ["telemarketing"],
     "props": {
       "fullWidth": true
     }
   },
-
   "flex-layout.row#2-desktop": {
     "children": ["notification.bar#home"],
     "props": {
@@ -34,7 +32,7 @@
   },
   "flex-layout.row#3-desktop": {
     "props": {
-      "blockClass": "menu-link",
+      "blockClass": "menu-link-header",
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
@@ -70,10 +68,10 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "search-bar"
+      // "locale-switcher",
+      //"login",
+      // "minicart.v2"
     ]
   },
   "flex-layout.col#logo-desktop": {
@@ -92,8 +90,9 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url":"https://media.wired.com/photos/5926dea98d4ebc5ab806bc20/16:9/w_2400,c_limit/Mastercard2-1.jpg",
+      // "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "80"
     }
   },
   "header-layout.mobile": {
@@ -120,7 +119,6 @@
   "drawer": {
     "children": ["menu#drawer"]
   },
-
   "menu#drawer": {
     "children": [
       "menu-item#category-apparel",
@@ -131,7 +129,6 @@
       "orientation": "vertical"
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",

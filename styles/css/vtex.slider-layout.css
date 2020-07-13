@@ -1,12 +1,13 @@
 .sliderLayoutContainer {
   justify-content: center;
+  width: auto;
 }
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
 }
 
 .sliderTrackContainer {
-  max-width: 1520px;
+  max-width: 100%;
 }
 
 .paginationDotsContainer {
@@ -24,4 +25,20 @@
   margin-bottom: 25px;
   padding-left: .5rem;
   padding-right: .5rem;
+}
+.sliderRightArrow--carousel{
+  left:0;
+  margin-top: 40px;
+}
+
+.paginationDotsContainer--carousel{
+  left: 90%;
+  
+  top: 60%;
+}
+.paginationDot--isActive{
+  background-color: #ffffff;
+}
+.caretIcon--carousel{
+  color: #ffffff;
 }

@@ -62,6 +62,7 @@
 
   "search-result-layout.desktop": {
     "children": [
+      "slider-layout#plpbanner",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
@@ -75,6 +76,34 @@
       }
     }
   },
+  "slider-layout#plpbanner": {
+    "children": ["info-card#plpbanner"],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "height":720,
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots":"never",
+      "blockClass": "plp-banner",
+      "fullWidth":true
+    }
+  },
+  "info-card#plpbanner": {
+    "props": {
+      "imageUrl": "assets/PLP/Banner.jpg",
+      "isFullModeStyle": true,
+      "headline": "BOSS",
+      "subhead":"WEEKLY MUST HAVES",
+      "callToActionMode":"none",
+      "textPosition": "right",
+      "blockClass":"plpbanner"
+    }
+  },
+  
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {

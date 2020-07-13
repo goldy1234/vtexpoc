@@ -1,36 +1,222 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      
+     // "list-context.image-list#demo",
+     "slider-layout#demo-images",
+      "__fold__",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
+      "rich-text#shelf-title-4",
+      "slider-layout#text-test",
+      "rich-text#shelf-title-2",
+      //"slider-layout#text-test",
+      "flex-layout.row#featured",
       "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#favourite",
+      //"flex-layout.row#deals",
+      "rich-text#shelf-title",
+     "flex-layout.row#shelf",
+    
+     "rich-text#shelf-title-3",
+     "flex-layout.row#social"
+      //"rich-text#question",
+      //"rich-text#link"
+      //"newsletter"
     ]
   },
+  
 
+  "rich-text#shelf-title-2": {
+    "props": {
+      "text": "SHOP YOUR FAVOURITE",
+      "blockClass": "shelfTitle"
+    }
+    },
+
+    "flex-layout.row#featured": {
+      "children": ["info-card#featured1", "info-card#featured2","info-card#featured3", "info-card#featured4"],
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 1,
+          "phone": 1
+        },
+        "height":720,
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots":"never",
+        "blockClass":"info-card-home-featured",
+        "fullWidth":true
+      }
+    },
+    "info-card#featured4": {
+      "props": {
+        "imageUrl": "assets/Homepage/Section 03/01.jpg",
+        "callToActionMode":"blank",
+        "blockClass":  "info-card-featured"
+               
+       
+      }
+    },
+    "info-card#featured3": {
+      "props": {
+        "imageUrl": "assets/Homepage/Section 03/02.jpg",
+        "callToActionMode":"none",
+        "blockClass":"info-card-featured"
+        
+        
+        
+      }
+    },
+    "info-card#featured1": {
+      "props": {
+        "imageUrl": "assets/Homepage/Section 03/03.jpg",
+        "callToActionMode":"blank",
+        "blockClass":  "info-card-featured"
+        
+       
+       
+      }
+    },
+    "info-card#featured2": {
+      "props": {
+        "imageUrl": "assets/Homepage/Section 03/04.jpg",
+        "callToActionMode":"none",
+        "blockClass":"info-card-featured"
+        
+        
+        
+      }
+    },
+
+
+
+  /***************************************************/
+
+  "flex-layout.row#favourite": {
+    "children": ["info-card#favourite1", "info-card#favourite2"],
+    "props":{
+      "blockClass":"info-card-favourite-product"
+    }
+  },
+
+  "info-card#favourite1": {
+    "props": {
+      "id": "info-card#featured1",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/Homepage/Section 05/01.jpg",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-featured1",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#favourite2": {
+    "props": {
+      "id": "info-card#featured2",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/Homepage/Section 05/02.jpg",
+      "headline": "Clearance Sale",
+      "callToActionText": "SHOP NOW",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-featured1",
+      "textAlignment": "center"
+    }
+  },
+
+  /***********************/
+
+
+    /***************************************************/
+
+    
+    /*************************/
+
+    "rich-text#shelf-title-3": {
+      "props": {
+        "text": "###  #FLAUNT MASTERCARD",
+        "blockClass": "shelfTitle"
+      }
+      },
+ /************************/
+
+
+ /* social icons*/
+ "flex-layout.row#social":{
+  "children":[
+    "social-networks"
+   ],
+     "props": {
+      
+     "blockClass": "socialicons"
+     }
+ },
+
+/*****************************/
+ 
   "shelf#home": {
     "blocks": ["product-summary.shelf"]
+    
   },
+  "slider-layout#demo-images": {
+    "children": ["info-card#1", "info-card#2"],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "height":720,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "fullWidth":true
+    }
+  },
+  "info-card#1": {
+    "props": {
+      "imageUrl": "assets/Header.jpg",
+      "isFullModeStyle": true,
+      "headline": "BOSS",
+      "subhead":"WEEKLY MUST HAVES",
+      "callToActionMode":"none",
+      "textPosition": "right",
+      "blockClass":"home-carousel"
+    }
+  },
+  "info-card#2": {
+    "props": {
+      "imageUrl": "assets/Header.jpg",
+      "isFullModeStyle": true,
+      "headline": "Black Friday",
+      "callToActionMode":"none",
+      "textPosition": "right",
+      "blockClass":"home-carousel"
+    }
+  },
+  /*
 
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
+      
       "height": 720,
+      "fullWidth":true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/Header.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg",
+          "description": "something something"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/Header.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg",
+          "description": "something something"
         }
       ]
     }
@@ -47,10 +233,11 @@
       "blockClass": "carousel"
     }
   },
+  */
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## FEATURED PRODUCTS",
       "blockClass": "shelfTitle"
     }
   },
@@ -81,11 +268,10 @@
     "props": {
       "id": "info-card-home",
       "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
+      "textPosition": "right",
+      "imageUrl": "assets/Homepage/Section-04.jpg",
+      "headline": "What if we can refine your shopping experience",
+      "callToActionMode":"blank",
       "blockClass": "info-card-home",
       "textAlignment": "center"
     }
@@ -98,10 +284,115 @@
     }
   },
 
-  "rich-text#link": {
+
+
+
+
+  "slider-layout#text-test": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots":"never",
+      "blockClass": "test-carousel"
+    },
+    "children": ["image#brand1", "image#brand2","image#brand3", "image#brand4","image#brand5","image#brand6","image#brand7","image#brand8"]
+  },
+
+  "image#brand1": {
+    "props": {
+      "src": "assets/Homepage/Section 07/Layer 8802.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
     }
-  }
+  },
+
+  "image#brand2": {
+    "props": {
+      "src": "assets/Homepage/Section 07/Layer 8803.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },"image#brand3": {
+    "props": {
+      "src": "assets/Homepage/Section 07/Layer 8804.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+  "image#brand4": {
+    "props": {
+      "src": "assets/Homepage/Section 07/Layer 8805.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+  "image#brand5": {
+    "props": {
+      "src": "assets/Homepage/Section 07/Layer 8806.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+  "image#brand6": {
+    "props": {
+      "src": "assets/Homepage/Section 07/Layer 8807.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+  "image#brand7": {
+    "props": {
+      "src": "assets/Homepage/Section 07/Layer 8808.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+  "image#brand8": {
+    "props": {
+      "src": "assets/Homepage/Section 07/Layer 8809.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+
+  "rich-text#shelf-title-4": {
+    "props": {
+      "text": "## SIGNATURE COLLECTIONS",
+      "blockClass": "shelfTitle"
+    }
+    }
+/*********************************/
+
+ 
+
+  
 }

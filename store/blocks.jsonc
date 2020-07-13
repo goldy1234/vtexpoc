@@ -11,6 +11,9 @@
   "store.orderplaced": {
     "blocks": ["order-placed"]
   },
+  
+    
+  
 
   "store.account": {
     "blocks": ["my-account"],
@@ -45,8 +48,12 @@
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
-      "add-to-cart-button"
+     "add-to-cart-button"
     ]
+  },
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"]
   },
 
   "product-summary-image#shelf": {
@@ -59,8 +66,14 @@
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
-      "modal-trigger#quickview"
+      //"modal-trigger#quickview",
+      "add-to-list-btn#btn-add-to-wishlist"
     ]
+  },
+  "add-to-list-btn#btn-add-to-wishlist":{
+    "props": { 
+      "blockClass":"btn-add-to-wishlist"
+   }
   },
 
   "product-summary-image": {

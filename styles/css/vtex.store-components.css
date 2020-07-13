@@ -3,7 +3,7 @@
   color: #03034e;
   font-weight: 700;
   font-size: 12px;
-  text-decoration: underline;
+  text-decoration: underline
 }
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
@@ -13,18 +13,15 @@
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
-  background-color: #e6f1e6;
+  background-color: #ffffff;
   padding: 0px;
+  margin-top: 60px;
 }
-
-.newsletter {
-  background-color: #03054e;
-  max-width: 1528px;
-  margin: 0 auto;
-}
-
-.newsletter .container {
-  padding: 60px 10px;
+.infoCardContainer--info-card-featured {
+  max-width: 1500px;
+  margin: 5px;
+  
+  padding: 0px;
 }
 
 .label {
@@ -32,25 +29,40 @@
   font-size: 26px;
 }
 
+.newsletter {
+  
+  
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding-top: 5%;
+  width: 100%;
+
+}
+
+
+
 .inputGroup {
   padding-bottom: 4px;
   display: flex;
-  color: #fff;
+  color: #000;
+
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
   background-color: transparent;
-  color: #fff;
+  color: #000;
   border: none;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
-  color: #fff;
+  color: #000;
   font-size: 16px;
 }
 
 .inputGroup :global(.vtex-button) {
-  background-color: transparent;
+  background-color: #000;
   color: #fff;
   border: none;
   margin-right: -24px;
@@ -71,19 +83,46 @@
 
 @media only screen and (min-width: 640px) {
   .newsletter .container {
-    padding: 140px;
+   
+    background-color: transparent;
+  }
+  .newsletter .container .form .label  {
+    color: black;
+    
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: -200px;
+
+    
+  }
+   
+  .newsletter .container .form .inputGroup{
+    width: 100%;
   }
 
   .label {
     font-size: 40px;
   }
+  .infoCardContainer--info-card-home .infoCardHeadline{
+    font-family: cursive;
+  }
 
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
+    
   }
 
   .infoCardContainer--info-card-home .infoCardImageContainer {
     width: 70%;
+  }
+  .infoCardContainer--info-card-featured1 .infoCardTextContainer {
+    width: 100%;
+    margin-top: 260px;
+    
+  }
+
+  .infoCardContainer--info-card-featured1 .infoCardImageContainer {
+    width: 100%;
   }
 
   .imageElement--storePrint {
@@ -115,3 +154,84 @@
   font-weight: bold;
   font-size: 30px;
 }
+
+.carouselContainer--product-pics .carouselGaleryThumbs{
+  display: none;
+}
+.swiperCaret--product-pics{
+  display: none;
+}
+.swiperBullet--product-pics{
+  display: none;
+}
+.productImagesGallerySlide--product-pics{
+  width: 33% !important;
+  margin-right: 1%;
+}
+.productImagesGallerySwiperContainer--product-pics{
+  left: -15%;
+  width: 121%;
+}
+
+@media only screen and (min-width: 640px){
+  .infoCardImage--info-card-featured {
+    width: 90%;
+  
+  }
+  .infoCardImageContainer--info-card-featured{
+    width: 100%;
+  }
+  .productImagesGallerySwiperContainer--product-pics{
+    left: -25%;
+    width: 121%;
+    margin-top: -80px;
+  }
+
+}
+.shareContainer{
+  float: right;
+  margin-top: -8px;
+
+}
+.shareLabel{
+  float: left;
+  font-size: 17px;
+  font-weight:bolder;
+  margin-right: 70px;
+  text-transform: uppercase;
+  color: black;
+  margin-top: -5px;
+}
+.shareSocialButton{
+  padding-right: 20px;
+  margin-top: -8px;
+}
+
+.imageElement--carousel{
+  font-size: 70px;
+  color: #e6f1e6;
+}
+
+.infoCardContainer--home-carousel{
+  width: 100%;
+  height: 1060px;
+}
+.infoCardHeadline--home-carousel{
+  color: #e6f1e6;
+}
+.infoCardSubhead--home-carousel{
+  color: #e6f1e6;
+}
+.infoCardContainer--plpbanner{
+  width: 100%;
+  height: 1060px;
+}
+.infoCardContainer--plp-banner{
+  width: 100%;
+  height: 1060px;
+}
+.infoCardTextContainer--info-card-featured {
+  display: none;
+
+}
+

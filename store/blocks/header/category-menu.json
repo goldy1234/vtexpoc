@@ -4,10 +4,36 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
+      "category-menu",
+      "menu-item#category-men",
       "menu-item#category-apparel",
       "menu-item#category-home",
       "menu-item#more"
+      
     ]
+  },
+  "category-menu": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": []
+    }
+  },
+  "menu-item#category-men": {
+    "props": {
+      "id": "menu-item-category-men",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Men---Shoes/",
+        "noFollow": false,
+        "tagTitle": "Home",
+        "text": "MENS"
+      }
+    }
   },
   "menu-item#category-apparel": {
     "props": {
@@ -155,6 +181,7 @@
       "menu-item#about-us"
     ]
   },
+  
   "menu-item#about-us": {
     "props": {
       "id": "menu-item-about-us",

@@ -5,7 +5,7 @@
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
+      
       "flex-layout.row#footer-3-desktop"
     ]
   },
@@ -13,15 +13,35 @@
     "children": [
       "vtex.menu@2.x:menu#Products",
       "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "vtex.menu@2.x:menu#footer-decoration",      
+      "flex-layout.col#signup"
+     
     ],
     "props": {
       "blockClass": "menu-row",
       "paddingTop": 6,
       "paddingBottom": 3
+    }
+  },
+
+  "flex-layout.col#signup":{
+    "children":[
+      "newsletter",
+      "rich-text#socialicontext",
+      "social-networks"
+    ]
+  },
+  "rich-text#socialicontext":{
+    "props":{
+     
+      "text":"STAY CONNECTED",
+      "blockClass":"socialicontext"
+    }
+  },
+  "newsletter":{
+    "props":{
+      "label":"NEWSLETTER SIGN UP",
+      "submit":"SUBMIT"
     }
   },
 
@@ -68,7 +88,7 @@
   },
   "rich-text#footer": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "Mastercard's current advertising campaign tagline is Priceless. The slogan associated with the campaign is There are some things money can't buy. For everything else, there's Mastercard.",
       "blockClass": "footer"
     }
   },
@@ -109,7 +129,7 @@
   },
   "rich-text#footer-mobile": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "Mastercard's current advertising campaign tagline is Priceless. The slogan associated with the campaign is There are some things money can't buy. For everything else, there's Mastercard.",
       "blockClass": "footer"
     }
   }

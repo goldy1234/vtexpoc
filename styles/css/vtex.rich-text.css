@@ -5,13 +5,16 @@
 }
 
 .container--shelfTitle {
-  color: #727273;
+  color: #050513;
   justify-content: center;
   text-align: center;
+  font-family: cursive;
+  font-size: large;
 }
 
 .headingLevel2--shelfTitle {
-  font-weight: 200;
+  font-weight: 500;
+  font-family: cursive;
 }
 
 .container--deals .paragraph {
@@ -86,5 +89,13 @@
 
   .container--title .paragraph {
     line-height: 1.3em;
+  }
+  .container--footerTitle{
+    padding-left: 20px;
+    font-weight: 700;
+  }
+  .container--socialicontext{
+    padding-left: 0%;
+    font-weight: 700;
   }
 }

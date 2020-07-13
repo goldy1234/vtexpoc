@@ -15,14 +15,29 @@
     padding: 0 0.25rem;
   }
 }
+.flexRowContent--info-card-featured-product{
+  justify-content: space-around;
+}
+.flexRowContent--info-card-favourite-product{
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.topheader{
+  justify-content: space-around;
 
+}
+.flexRowContent--socialicons{
+  justify-content: center;
+  padding-left: 43%;
+
+}
 .flexRowContent--menu-link {
-  background-color: #03044e;
+  background-color: #000;
   color: #fff;
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: #000;
 }
 
 .flexRowContent--main-header-mobile {
@@ -95,4 +110,11 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+.flexRow--menu-link-header{
+  background-color:#222222;
+  color: #fff;
+}
+.flexRowContent--info-card-home-featured{
+  margin-left: 1%;
 }

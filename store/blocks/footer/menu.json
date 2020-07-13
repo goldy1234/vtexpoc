@@ -4,11 +4,24 @@
       "orientation": "vertical"
     },
     "children": [
+      
+         
+       "rich-text#f1",
       "menu-item#news",
       "menu-item#blackfriday",
       "menu-item#sale",
       "menu-item#personalization"
     ]
+  },
+
+  
+     
+  "rich-text#f1":{
+    "props":{
+     
+      "text":"Mastercard",
+      "blockClass":"footerTitle"
+    }
   },
   "menu-item#news": {
     "props": {
@@ -76,10 +89,18 @@
       "orientation": "vertical"
     },
     "children": [
+      "rich-text#f2",
       "menu-item#smartphones",
       "menu-item#videogames",
       "menu-item#tvs"
     ]
+  },
+  "rich-text#f2":{
+    "props":{
+     
+      "text":"CUSTOMER SERVICE",
+      "blockClass":"footerTitle"
+    }
   },
 
   "menu-item#smartphones": {
@@ -194,6 +215,7 @@
       "orientation": "vertical"
     },
     "children": [
+      "rich-text#f3",
       "menu-item#clothing",
       "menu-item#shorts",
       "menu-item#tank-tops",
@@ -201,6 +223,13 @@
       "menu-item#sweatshirt",
       "menu-item#cropped"
     ]
+  },
+  "rich-text#f3":{
+    "props":{
+     
+      "text":"MY MARKETPLACE",
+      "blockClass":"footerTitle"
+    }
   },
 
   "vtex.menu@2.x:menu#footer-mobile": {

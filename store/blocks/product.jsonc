@@ -3,10 +3,15 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "flex-layout.row#description",
+      "flex-layout.row#product-pics",
+      "flex-layout.row#product-videos",
+     // "flex-layout.row#description",
       "shelf.relatedProducts",
-      "product-reviews",
-      "product-questions-and-answers"
+     // "product-reviews",
+      "product-questions-and-answers",
+      "tab-layout#pdp"
+
+      
     ]
   },
   "flex-layout.row#product-breadcrumb": {
@@ -60,9 +65,42 @@
       "rowGap": 0
     }
   },
+  "flex-layout.row#product-pics":{
+    "children":[
+      "product-images#pics"
+    ]
+  },
+  "product-images#pics":{
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      },
+      "displayThumbnailsArrows": true,
+      "blockClass":"product-pics"
+    }
+  },
+  "flex-layout.row#product-videos": {
+    "children": [
+      "product-images#videos"
+    ]
+  },
+  "product-images#videos": {
+    "props": {
+      "contentType":"videos",
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      },
+      "displayThumbnailsArrows": true
+    }
+  },
+
+  
   "flex-layout.row#product-image": {
     "children": ["product-images"]
   },
+
   "product-images": {
     "props": {
       "aspectRatio": {
@@ -79,7 +117,7 @@
     },
     "children": [
       "flex-layout.row#product-name",
-      "product-rating-summary",
+     // "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       "product-installments",
@@ -90,9 +128,10 @@
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
+      "share#default",
       "availability-subscriber",
-      "shipping-simulator",
-      "share#default"
+      "shipping-simulator"
+      
     ]
   },
 
@@ -124,7 +163,24 @@
       "marginTop": 4,
       "marginBottom": 7
     },
-    "children": ["add-to-cart-button"]
+    "children": ["add-to-cart-button#product","add-to-cart-button"]
+  },
+  "add-to-cart-button":{
+    "props":{
+      "text":"ADD TO BAG",
+      "blockClass":"pdp-addtocart"
+
+    }
+    
+  },
+  "add-to-cart-button#product": {
+    "props": {
+      "isOneClickBuy": true,
+      "showTooltipOnSkuNotSelected": false,
+      "text":"BUY NOW",
+      "blockClass":"pdp-buynow"
+    }
+    
   },
 
   "share#default": {
@@ -136,5 +192,119 @@
         "Pinterest": true
       }
     }
+  },
+  /* tab layout*/
+
+  "tab-layout#pdp": {
+    "children": [
+
+      "tab-list#pdp",
+      "tab-content#pdp"
+    ],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "discription"
+    }
+  },
+  "tab-list#pdp": {
+    "children": [
+
+      "tab-list.item#discription",
+      "tab-list.item#details",
+      "tab-list.item#EMI_OPTION",
+      "tab-list.item#warranty",
+      "tab-list.item#Ratings"
+
+      
+      ]
+  },
+  "tab-list.item#discription": {
+    "props": {
+      "tabId": "discription",
+      "label": "discription",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#details": {
+    "props": {
+      "tabId": "details",
+      "label": "details"
+    }
+  },
+  "tab-list.item#EMI_OPTION": {
+    "props": {
+      "tabId": "EMI_OPTION",
+      "label": "EMI_OPTION",
+      "defaultActiveTab": false
+    }
+  },
+  "tab-list.item#warranty": {
+    "props": {
+      "tabId": "warranty",
+      "label": "Warranty"
+    }
+  },
+  "tab-list.item#Ratings": {
+    "props": {
+      "tabId": "Ratings",
+      "label": "Ratings"
+    }
+  },
+
+
+  "tab-content#pdp": {
+    "children": [
+      "tab-content.item#discription",
+      "tab-content.item#details",
+      "tab-content.item#EMI_OPTION",
+      "tab-content.item#warranty",
+      "tab-content.item#Ratings"
+
+    ]
+  },
+  "tab-content.item#discription": {
+    "children": ["product-description"],
+    
+    "props": {
+      "tabId": "discription"
+    }
+  },
+
+
+  "tab-content.item#details": {
+    "children": ["product-description"],
+    
+    "props": {
+      "tabId": "details"
+    }
+  },
+  "tab-content.item#EMI_OPTION": {
+    "children": ["product-installments"
+    ],
+    
+    "props": {
+      "tabId": "EMI_OPTION"
+    }
+  },
+  "tab-content.item#warranty": {
+    "children": ["product-description"],
+    
+    "props": {
+      "tabId": "warranty"
+    }
+  },
+  "tab-content.item#Ratings": {
+    "children": [
+       "product-reviews",
+       "product-rating-summary"
+    ],
+    
+    "props": {
+      "tabId": "Ratings"
+    }
   }
+ 
+
+  
+  
 }
