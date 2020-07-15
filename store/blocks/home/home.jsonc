@@ -24,7 +24,10 @@
       //"rich-text#question",
       //"rich-text#link"
       //"newsletter"
-    ]
+    ],
+    "props":{
+      "blockClass":"store-home"
+    }
   },
   
 
@@ -36,7 +39,7 @@
     },
 
     "flex-layout.row#featured": {
-      "children": ["info-card#featured1", "info-card#featured2","info-card#featured3", "info-card#featured4"],
+      "children": [ "flex-layout.col#featured1","flex-layout.col#featured2","flex-layout.col#featured3","flex-layout.col#featured4"],
       "props": {
         "itemsPerPage": {
           "desktop": 4,
@@ -47,49 +50,165 @@
         "infinite": true,
         "showNavigationArrows": "never",
         "showPaginationDots":"never",
+        
         "blockClass":"info-card-home-featured",
         "fullWidth":true
       }
     },
-    "info-card#featured4": {
-      "props": {
-        "imageUrl": "assets/Homepage/Section 03/01.jpg",
-        "callToActionMode":"blank",
-        "blockClass":  "info-card-featured"
-               
-       
+
+    
+     "flex-layout.col#featured4":{
+       "children":[
+         "image#featured4",
+         "link#featured4"
+       ]
+
+     },
+     "image#featured4":{
+       "props":{
+         "src": "assets/Homepage/Section 03/01.jpg",
+         "link": {
+           "url":"/men/shoes"
+         }
+       }
+     },
+     "link#featured4":{
+       "props":{
+         "label":"mens shoe",
+         "href":"/men/shoes",
+         "blockClass":"link-featured"
+       }
+
+     },
+
+
+     "flex-layout.col#featured3":{
+      "children":[
+        "image#featured4",
+        "link#featured4"
+      ]
+
+    },
+    "image#featured3":{
+      "props":{
+        "src": "assets/Homepage/Section 03/02.jpg",
+        "link": {
+          "url":"/men/shoes"
+        }
       }
     },
+    "link#featured3":{
+      "props":{
+        "label":"mens shoe",
+        "href":"/men/shoes",
+        "blockClass":"link-featured"
+      }
+
+    },
+
+
+    "flex-layout.col#featured2":{
+      "children":[
+        "image#featured4",
+        "link#featured4"
+      ]
+
+    },
+    "image#featured2":{
+      "props":{
+        "src": "assets/Homepage/Section 03/03.jpg",
+        "link": {
+          "url":"/men/shoes"
+        }
+      }
+    },
+    "link#featured2":{
+      "props":{
+        "label":"mens shoe",
+        "href":"/men/shoes",
+        "blockClass":"link-featured"
+      }
+
+    },
+
+
+    "flex-layout.col#featured1":{
+      "children":[
+        "image#featured4",
+        "link#featured4"
+      ]
+
+    },
+    "image#featured1":{
+      "props":{
+        "src": "assets/Homepage/Section 03/04.jpg",
+        "link": {
+          "url":"/men/shoes"
+        }
+      }
+    },
+    "link#featured1":{
+      "props":{
+        "label":"mens shoe",
+        "href":"/men/shoes",
+        "blockClass":"link-featured"
+      }
+
+    },
+    /*"info-card#featured4": {
+
+      "props": {
+        "imageUrl": "assets/Homepage/Section 03/01.jpg",        
+        
+        "blockClass":  "info-card-featured",
+        "isFullModeStyle": true,
+        "textPosition": "center",       
+        "callToActionText": "DISCOVER",       
+        "callToActionUrl": "/sale/d",        
+        "textAlignment": "center"
+        
+      }              
+       
+      },      
+    
     "info-card#featured3": {
       "props": {
         "imageUrl": "assets/Homepage/Section 03/02.jpg",
-        "callToActionMode":"none",
-        "blockClass":"info-card-featured"
-        
-        
+        "blockClass":  "info-card-featured",
+        "isFullModeStyle": true,
+        "textPosition": "center",       
+        "callToActionText": "DISCOVER",       
+        "callToActionUrl": "/sale/d",        
+        "textAlignment": "center",
+        "linkTarget":"_self"
         
       }
     },
     "info-card#featured1": {
       "props": {
         "imageUrl": "assets/Homepage/Section 03/03.jpg",
-        "callToActionMode":"blank",
-        "blockClass":  "info-card-featured"
-        
+        "blockClass":  "info-card-featured",
+        "isFullModeStyle": true,
+        "textPosition": "center",       
+        "callToActionText": "DISCOVER",       
+        "callToActionUrl": "/sale/d",        
+        "textAlignment": "center"
        
        
       }
     },
     "info-card#featured2": {
       "props": {
-        "imageUrl": "assets/Homepage/Section 03/04.jpg",
-        "callToActionMode":"none",
-        "blockClass":"info-card-featured"
-        
-        
+        "imageUrl": "assets/Homepage/Section 03/03.jpg",
+        "blockClass":  "info-card-featured",
+        "isFullModeStyle": true,
+        "textPosition": "center",       
+        "callToActionText": "DISCOVER",       
+        "callToActionUrl": "/sale/d",        
+        "textAlignment": "center"
         
       }
-    },
+    },*/
 
 
 
@@ -254,7 +373,7 @@
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 3,
         "tablet": 3,
         "phone": 1
       },
@@ -309,7 +428,7 @@
       
       "blockClass": "info-card-featured1",
       "link":{
-        "url":"/wishlist"
+        "url":"/boss"
       }
     }
   },
@@ -320,7 +439,7 @@
       
       "blockClass": "info-card-featured1",
       "link":{
-        "url":"/wishlist"
+        "url":"/boss"
       }
     }
   },"image#brand3": {

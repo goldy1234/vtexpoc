@@ -35,9 +35,15 @@
   background-color: #000;
   color: #fff;
 }
+.flexRow--info-card-home-featured{
+  margin-left: 80px;
+  margin-right: 80px;
+}
 
 .flexRowContent--main-header {
   background-color: #000;
+  
+
 }
 
 .flexRowContent--main-header-mobile {
@@ -114,7 +120,17 @@
 .flexRow--menu-link-header{
   background-color:#222222;
   color: #fff;
+  margin-right: 80px;
+  margin-left: 80px;
 }
 .flexRowContent--info-card-home-featured{
   margin-left: 1%;
+}
+.flexRow--info-card-favourite-product{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.flexRow--pdp{
+  margin-left: 80px;
+  margin-right: 80px;
 }

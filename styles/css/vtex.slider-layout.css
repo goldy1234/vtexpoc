@@ -4,6 +4,10 @@
 }
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
+
+  margin-left: 80px;
+  margin-right: 80px;
+
 }
 
 .sliderTrackContainer {
@@ -41,4 +45,12 @@
 }
 .caretIcon--carousel{
   color: #ffffff;
+}
+.sliderLayoutContainer--test-carousel{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.sliderLayoutContainer--shelf{
+  margin-left: 80px;
+  margin-right: 80px;
 }

@@ -62,7 +62,7 @@
 
   "search-result-layout.desktop": {
     "children": [
-      "slider-layout#plpbanner",
+       "slider-layout#plpbanner",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
@@ -84,7 +84,7 @@
         "tablet": 1,
         "phone": 1
       },
-      "height":720,
+      
       "infinite": true,
       "showNavigationArrows": "never",
       "showPaginationDots":"never",
@@ -94,7 +94,7 @@
   },
   "info-card#plpbanner": {
     "props": {
-      "imageUrl": "assets/PLP/Banner.jpg",
+      "imageUrl":"assets/PLP/Banner.jpg",
       "isFullModeStyle": true,
       "headline": "BOSS",
       "subhead":"WEEKLY MUST HAVES",

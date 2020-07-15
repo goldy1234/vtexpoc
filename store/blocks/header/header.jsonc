@@ -11,7 +11,10 @@
       // "flex-layout.row#2-desktop",
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
-    ]
+    ],
+    "props":{
+      "blockClass":"header-desktop"
+    }
   },
   "flex-layout.row#1-desktop": {
     "children": ["telemarketing"],

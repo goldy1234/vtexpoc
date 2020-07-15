@@ -10,3 +10,18 @@
 color: black;
 
 }
+.container--pdp{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.listContainer--tab-pdp{
+    justify-content: flex-start;
+}
+.listContainer--tab-pdp .listItemActive{
+    border: none;
+    font-weight: bold;
+}
+.listContainer--tab-pdp :global(.vtex-button){
+    background-color: transparent;
+    color: black;
+}

@@ -5,9 +5,23 @@
   font-size: 12px;
   text-decoration: underline
 }
+.searchBarInnerContainer :global(.vtex-input__suffix){
+  background-color: black;
+
+}
+.searchBarInnerContainer :global(.vtex-input-prefix__group){
+  border: 1px solid gray;
+}
+.searchIcon{
+  color: gray;
+}
+
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
   max-width: 208px;
+  background-color: #000;
+  color: #fff;
+  border: none;
 }
 
 .infoCardContainer--info-card-home {
@@ -16,11 +30,14 @@
   background-color: #ffffff;
   padding: 0px;
   margin-top: 60px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .infoCardContainer--info-card-featured {
-  max-width: 1500px;
-  margin: 5px;
-  
+  max-width: 1000px;
+  height: 350px;
+  margin-left: 10px; 
+  margin-right: 10px; 
   padding: 0px;
 }
 
@@ -214,7 +231,9 @@
 
 .infoCardContainer--home-carousel{
   width: 100%;
-  height: 1060px;
+  height: 775px;
+  margin-bottom: -40px;
+
 }
 .infoCardHeadline--home-carousel{
   color: #e6f1e6;
@@ -224,14 +243,40 @@
 }
 .infoCardContainer--plpbanner{
   width: 100%;
-  height: 1060px;
+  height: 560px;
 }
 .infoCardContainer--plp-banner{
   width: 100%;
-  height: 1060px;
+  
 }
 .infoCardTextContainer--info-card-featured {
-  display: none;
+  margin-bottom: -80%;
+  
 
 }
+.infoCardCallActionContainer--info-card-featured{
+  margin-bottom: -100%;
+  text-decoration: none;
+ 
+  
+}
+.infoCardCallActionText--info-card-featured{
+  text-decoration: none;
+  color: #000;
+}
+.infoCardCallActionContainer--info-card-featured :global(.vtex-button){
+  background-color: transparent;
+  color: #000;
+  border:none ;
+}
 
+.infoCardContainer--info-card-featured1{
+  margin-left: 10px;
+}
+
+.productImagesGallerySwiperContainer--product-pics{
+  margin-top: 20px;
+}
+.productImageTag--product-pics{
+  width:50% !important;
+}
