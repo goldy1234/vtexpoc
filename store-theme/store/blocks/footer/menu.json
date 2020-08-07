@@ -1,0 +1,375 @@
+{
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      
+         
+       "rich-text#f1",
+       "flex-layout.col#f1"
+    ]
+  },
+  "flex-layout.col#f1":{
+    "children":[ 
+      "menu-item#aboutus",
+      "menu-item#careers",
+      "menu-item#salewithus"
+    ]
+  },
+
+  "menu-item#aboutus": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "About Us",
+        "text": "About Us"
+      }
+    }
+  },
+  "menu-item#careers": {
+    "props": {
+      "id": "menu-item-careers",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Careers",
+        "text": "Careers"
+      }
+    }
+  },
+  "menu-item#salewithus": {
+    "props": {
+      "id": "menu-item-sale-with-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sale With Us",
+        "text": "Sale With Us"
+      }
+    }
+  },
+  
+     
+  "rich-text#f1":{
+    "props":{
+     
+      "text":"Mastercard",
+      "blockClass":"footerTitle"
+    }
+  },
+  
+  "vtex.menu@2.x:menu#footer-marketplace": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#f3",
+      "menu-item#myaccount",
+      "menu-item#mywishlist",
+      "menu-item#myshoppingbag",
+      "menu-item#myorders",
+      "menu-item#myrewards"
+    ]
+  },
+  "rich-text#f2":{
+    "props":{
+     
+      "text":"CUSTOMER SERVICE",
+      "blockClass":"footerTitle"
+    }
+  },
+
+  "menu-item#myaccount": {
+    "props": {
+      "id": "menu-item-myaccount",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/account",
+        "noFollow": true,
+        "tagTitle": "My Account",
+        "text": "My Account"
+      }
+    }
+  },
+
+  "menu-item#mywishlist": {
+    "props": {
+      "id": "menu-item-mywishlist",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/wishlist",
+        "noFollow": true,
+        "tagTitle": "My Wishlist",
+        "text": "My Wishlist"
+      }
+    }
+  },
+
+  "menu-item#myshoppingbag": {
+    "props": {
+      "id": "menu-item-my-shopping-bag",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/checkout/#/cart",
+        "noFollow": true,
+        "tagTitle": "My Shopping Bag",
+        "text": "My Shopping Bag"
+      }
+    }
+  },
+
+  "menu-item#myorders": {
+    "props": {
+      "id": "menu-item-myorders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/account#/orders",
+        "noFollow": true,
+        "tagTitle": "My Orders",
+        "text": "My Orders"
+      }
+    }
+  },
+
+  "menu-item#myrewards": {
+    "props": {
+      "id": "menu-item-myrewards",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "My Rewards",
+        "text": "My Rewards"
+      }
+    }
+  },
+
+ 
+  "vtex.menu@2.x:menu#footer-support": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#f2",
+      "menu-item#contactus",
+      "menu-item#faqs",
+      "menu-item#trackorders",
+      "menu-item#shipping",
+      "menu-item#cancellations",
+      "menu-item#returns"
+    ]
+  },
+
+
+  "menu-item#contactus": {
+    "props": {
+      "id": "menu-item-contactus",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  },
+
+  "menu-item#faqs": {
+    "props": {
+      "id": "menu-item-faqs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Frequently Asked Questions",
+        "text": "Frequently Asked Questions"
+      }
+    }
+  },
+
+  "menu-item#trackorders": {
+    "props": {
+      "id": "menu-item-track-orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Track Orders",
+        "text": "Track Orders"
+      }
+    }
+  },
+
+  "menu-item#shipping": {
+    "props": {
+      "id": "menu-item-shipping",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Shipping",
+        "text": "Shipping"
+      }
+    }
+  },
+
+  "menu-item#cancellations": {
+    "props": {
+      "id": "menu-item-cancellations",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Cancellations",
+        "text": "Cancellations"
+      }
+    }
+  },
+
+  "menu-item#returns": {
+    "props": {
+      "id": "menu-item-returns",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Returns",
+        "text": "Returns"
+      }
+    }
+  },
+
+
+
+  
+ 
+  "rich-text#f3":{
+    "props":{
+     
+      "text":"MY MARKETPLACE",
+      "blockClass":"footerTitle"
+    }
+  },
+
+  
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#marketplace-mobile",
+      "menu-item#support-mobile"
+        ]
+  },
+
+  "menu-item#marketplace-mobile": {
+    "props": {
+      "id": "menu-item-category-marketplace",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "MarketPlace",
+        "text": "Marketplace"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#marketplace"]
+  },
+  "vtex.menu@2.x:submenu.accordion#marketplace": {
+    "children": ["vtex.menu@2.x:menu#marketplace-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#marketplace-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#myaccount",
+      "menu-item#mywishlist",
+      "menu-item#myshoppingbag",
+      "menu-item#myorders",
+      "menu-item#myrewards"
+    ]
+  },
+
+  "menu-item#support-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Support",
+        "text": "Support"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#support"]
+  },
+  "vtex.menu@2.x:submenu.accordion#support": {
+    "children": ["vtex.menu@2.x:menu#footer-support-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-support-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#contactus",
+      "menu-item#faqs",
+      "menu-item#trackorders",
+      "menu-item#shipping",
+      "menu-item#cancellations",
+      "menu-item#returns"
+        ]
+  }
+
+}
+

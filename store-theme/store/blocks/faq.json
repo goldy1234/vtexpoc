@@ -1,0 +1,106 @@
+{
+    "store.custom#faq": {
+        "blocks": [ 
+            "flex-layout.row#faq"           
+            ]
+           
+    },
+    "flex-layout.row#faq"  :{
+        "children":[
+            "flex-layout.col#faq"
+        ]
+    },
+    
+    "flex-layout.col#faq":{
+        "children":[
+            "rich-text#title-faq",
+            "rich-text#text-faq",
+            "rich-text#que-ans1",
+            "rich-text#que-ans2",
+            "rich-text#que-ans3",
+            "rich-text#que-ans4",
+            "rich-text#que-ans5",
+            "rich-text#que-ans6",
+            "rich-text#que-ans7",
+            "rich-text#que-ans8",
+            "rich-text#que-ans9",
+            "rich-text#que-ans10",
+            "rich-text#que-ans11"
+        ],
+        "props":{
+            "verticalAlign": "middle",
+            "blockClass":"FAQ"
+        }
+    },
+
+    "rich-text#title-faq":{
+        "props": {
+            "text":
+            "#FAQ",
+            "blockClass": "FAQ-Title"
+          }
+    },
+
+    "rich-text#text-faq":{
+        "props": {
+            "text": "THESE ARE YOUR QUESTIONS.THESE ARE OUR ANSWERS.",
+            "blockClass": "FAQ-SubTitle"
+          }
+    },
+
+    "rich-text#que-ans1":{
+        "props": {
+            "text": "**1. Do i need a TATA CLIQ Luxury account to be able to shop?** \n\n Yes,you do need a TATA CLIQ account to be able to make your purchase."
+          }
+    },
+    "rich-text#que-ans2":{
+        "props": {
+            "text": "**2. How can i create an account?** \n\n To sign up using an email address: \n • Enter your name,number and email address,in the Sign Up box and set a password that you will remember. \n • Click ‘Create an Account’ and wait for our confirmation mail."
+          }
+    },
+    "rich-text#que-ans3":{
+        "props": {
+            "text": "**3. Is my personal information kept private?** \n\n Yes. We take data protection seriously. For more information, read our full Privacy Policy."
+          }
+    },
+    "rich-text#que-ans4":{
+        "props": {
+            "text": "**4.I forgot my password. How do I reset it?** \n\n To reset your passwors: \n • Click on ‘Forgot Your Password?’ on the Sign In page. \n • Enter your registered email address or phone number and click ‘Reset Password’.\n\n If the email address or phone number we have on our records matches the one you’ve entered, we’ll send you an email or SMS with instructions on how to reset your password. If you haven’t received our email, chances are it might be in your spam folder."
+          }
+    },
+    "rich-text#que-ans5":{
+        "props": {
+            "text": "**5. Is it safe to use my credit/debit card?** \n\n All credit card and debit card payments on Tata CLiQ Luxury are processed through secure and trusted payment gateways managed by leading banks. We are Payment Card Industry Data Security Standard (PCI DSS) complaint. This standard helps in increased controls around cardholder data to reduce card fraud."
+          }
+    },
+    "rich-text#que-ans6":{
+        "props": {
+            "text": "**6. How do I know if my Tata CLiQ Luxury product is authentic?** \n\n We have tie-ups with authorized sources to ensure that the products that are shipped to you are authentic. For the luxury brands listed currently, we have partnered with the brand or their official licensed partners in India and are therefore the only portal to offer brand warranty on all our products."
+          }
+    },
+    "rich-text#que-ans7":{
+        "props": {
+            "text": "**7. What is Cliq Cash? How can I use it?** \n\n Now, gift your loved ones the most premium online shopping experience. Cliq Cash allows customers a quick and convenient option to send a gift voucher up to INR 10,000/- which is valid on all products available on Tata Cliq Luxury. Just go to the Cliq Cash Wallet section in the menu and select ' Buy new gift card' and follow the instructions"
+          }
+    },
+    "rich-text#que-ans8":{
+        "props": {
+            "text": "**8. I have received a gift voucher for Cliq Cash, how do I use it?** \n\n Just login to the latest version of Tata Cliq Luxury App on your iOS or Android device and go to Cliq Cash Wallet under menu options. Click on redeem gift card and follow the mentioned steps. You can now use Cliq Cash to pay for any order."
+          }
+    },
+    "rich-text#que-ans9":{
+        "props": {
+            "text": "**9. What is required to buy or claim eGV (Cliq Cash)?** \n\n KYC registration is required to buy, redeem and send gift vouchers (Cliq Cash). In case you face any issue with registration/KYC, please reach out to our customer care for help in registration."
+          }
+    },
+    "rich-text#que-ans10":{
+        "props": {
+            "text": "**10. What are the conditions on buying or using a gift card (Cliq Cash)?** \n\n This is an electronic voucher only valid for 1 year from date of purchase. Additionally, a voucher once created can not be cancelled. Cliq Cash is currently only available on the Android and IoS app. Cliq Cash can be redeemed on all products except buying an eGV."
+          }
+    },
+    "rich-text#que-ans11":{
+        "props": {
+            "text": "**11. Why are we charging Shipping Charge?** \n\n Shipping charge is levied in order to cover the delivery cost and serve as an insurance for high value items."
+          }
+    }
+}

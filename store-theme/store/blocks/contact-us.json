@@ -1,0 +1,86 @@
+{
+    "store.custom#contact-us": {
+        "blocks": [ 
+            "flex-layout.row#contact"
+        ]
+    },
+    "flex-layout.row#contact":{
+        "children":[
+            "flex-layout.col#contact-us"
+        ]
+    },
+    "flex-layout.col#contact-us":{
+            "children":[
+                "rich-text#title-contact-us",
+                "flex-layout.row#contact-us",
+                "rich-text#title-contact-us-icons",
+                "flex-layout.row#icons-contact-us"
+            ],
+            "props":{
+                "blockClass":"contactus-container"
+            }
+    },
+    "rich-text#title-contact-us":{
+        "props": {
+            "text":
+            "# contact us",
+            "blockClass": "contact-us-title"
+          }
+    },
+    "flex-layout.row#contact-us":{
+        "children": [
+            "rich-text#contact-us-col1",
+            "rich-text#contact-us-col2"
+          ],
+          "props": {
+            "blockClass": "contact-us-boxes"
+          }
+    },
+    "rich-text#contact-us-col1":{
+        "props": {
+            "text":
+            "**Chat Right Now** \n\n Our messaging assistant can quickly solve many \n isues or direct you to the right person or place. \n **instant chat and always available.** \n\n\n [Start Chatting](https://luxury--born.myvtex.com/contact-us)",
+            "blockClass": "contact"
+          }
+    },
+    "rich-text#contact-us-col2":{
+        "props": {
+            "text":
+            "**Have us call you**\n\n We will first get a few details about your issue \n and then someone will call you \n right away.\n\n\n [Call Me](https://luxury--born.myvtex.com/contact-us)",
+            "blockClass": "contact"
+          }
+    },
+    "rich-text#title-contact-us-icons":{
+        "props": {
+            "text": "Here are a few things you can take care of your own",
+            "blockClass": "contact-us-icon-title"
+          }
+    },
+   
+    "flex-layout.row#icons-contact-us":{
+        "children": [
+        "image#icon1",
+        "image#icon2",
+        "image#icon3"
+        ],
+        "props":{
+            "blockClass": "contact-us-icon"
+        }
+    },
+    "image#icon1":{
+        "props": {
+            "src": ""
+          }
+    },
+    "image#icon2":{
+        "props": {
+            "src": ""
+            
+          }
+    },
+    "image#icon3":{
+        "props": {
+            "src": ""
+          }
+    }
+}

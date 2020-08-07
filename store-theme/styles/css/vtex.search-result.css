@@ -1,0 +1,123 @@
+
+.filter__container--selectedFilters .filterTemplateOverflow{
+    display: flex;
+    
+}
+.filterItem{
+    word-break: "" !important ;
+}
+.selectedFilterItem{
+    border: 1px solid black;
+    padding: 5px;
+   border-radius: 40px;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.filterTitle{
+    display: none;
+}
+.selectedFilterItem :global(.vtex-checkbox__label){
+    font-size: large;
+    margin-left: -25px;
+    width: max-content;
+}
+.selectedFilterItem :global(.vtex-checkbox__label)::before{
+    content: "X";
+    padding-left: -5px;
+    margin-right:10px;
+    font-weight: bolder;
+}
+.selectedFilterItem :global(.vtex-checkbox__box-wrapper){
+    display: none;
+}
+.selectedFilterItem :global(.vtex-checkbox__inner-container){
+    display: none;
+}
+
+.filter__container--title{
+    display: none;
+}
+.filters--layout{
+    margin-top: 82.8px;
+    width: 123%;
+}
+.orderByDropdown{
+    position: absolute;
+    left: 53px;
+    width: 282px;
+    top: 450.625px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    
+    
+}
+.orderByButton{
+    justify-content: center;
+}
+.filter__container{
+    border: 1px solid black;
+    /* margin-bottom: 5px; */
+}
+.filter__container--selectedFilters{
+    position: absolute;
+    top:323.587px;
+    left:40%;
+    border: none;
+}
+.totalProducts--layout{
+    color: black;
+}
+.totalProductsMessage{
+    color: black;
+}
+.filterContent{
+    padding-left: 9%;
+}
+.filter__container--category .filterAvailable::before{
+    content: "CATEGORY";
+    margin-left: 20px;
+}
+.filter__container--brand .filterAvailable::before{
+    content: "BRANDS";
+    margin-left: 20px;
+}
+.filter__container--color .filterAvailable::before{
+    content: "COLOUR";
+    margin-left: 20px;
+}
+.filter__container--department .filterAvailable::before{
+    content: "DEPARTMENT";
+    margin-left: 20px;
+}
+.filter__container--size .filterAvailable::before{
+    content: "SIZE";
+    margin-left: 20px;
+}
+.filter__container--priceRange .filterAvailable::before{
+    content: "PRICE";
+    margin-left: 20px;
+}
+.filterItem--selected :global(.vtex-checkbox__box-wrapper){
+    background-color: black;
+}
+.searchResultContainer{
+    padding-top: 0%;
+    margin-left: 23px;
+    margin-right: 23px;
+    overflow: hidden;
+}
+.container--layout{
+    margin-left: 53px;
+    margin-right: 53px;
+}
+.galleryItem :global(.vtex-button){
+    background-color: transparent;
+    border: 1px solid black;
+}
+.galleryItem :global(.vtex-wish-list-0-x-wishlistIcon--btn-add-to-wishlist){
+    border: none;
+}
+.notFound--layout{
+    margin-left: 80px;
+}

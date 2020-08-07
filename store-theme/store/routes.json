@@ -1,0 +1,18 @@
+{
+    "store.custom#about-us": {
+      "title":"About Us",
+    "path": "/about-us"
+  },
+  "store.custom#wishlist":{
+    "title":"Wishlist",
+    "path":"/wishlist"
+  },
+  "store.custom#contact-us": {
+    "title":"Contact Us",
+    "path": "/contact-us"
+  },
+  "store.custom#faq": {
+    "title": "FAQ",
+    "path": "/faq"
+  }
+}

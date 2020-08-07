@@ -1,0 +1,646 @@
+{
+  "store.home": {
+    "blocks": [
+      
+     // "list-context.image-list#demo",
+     "slider-layout#demo-images",
+        "__fold__",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "rich-text#shelf-title-4",
+      "slider-layout#brand",
+      "rich-text#shelf-title-2",
+      //"slider-layout#text-test",
+      "flex-layout.row#featured",
+     // "info-card#home",
+     "flex-layout.row#promotional",
+      "flex-layout.row#favourite",
+      //"flex-layout.row#deals",
+      "rich-text#shelf-title",
+     "flex-layout.row#shelf",
+    
+     "rich-text#shelf-title-3",
+     "flex-layout.row#social"
+      //"rich-text#question",
+      //"rich-text#link"
+      //"newsletter"
+    ],
+    "props":{
+      "blockClass":"store-home"
+    }
+  },
+  "flex-layout.row#promotional":{
+    "children":[
+      "iframe",
+      "rich-text#promotion"
+    ],
+    "props":{
+    "blockClass":"promotion"
+    }
+  },
+  "rich-text#promotion":{
+    "props":{
+      "text":"Get inspired \n New collections, projects and more: be inspired by what’s happening now in the world of BOSS",
+      "blockClass":"promotion-text"
+    }
+  },
+  
+
+  "rich-text#shelf-title-2": {
+    "props": {
+      "text": "SHOP YOUR FAVOURITE",
+      "blockClass": "shelfTitle"
+    }
+    },
+
+    "flex-layout.row#featured": {
+      "children": ["info-card#featured1","info-card#featured2","info-card#featured3","info-card#featured4"],
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 1,
+          "phone": 1
+        },
+        "height":720,
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots":"never",
+        
+        "blockClass":"info-card-home-featured",
+        "fullWidth":true
+      }
+    },
+
+    /*
+     "flex-layout.col#featured4":{
+       "children":[
+         "image#featured4",
+         "link#featured4"
+       ]
+
+     },
+     "image#featured4":{
+       "props":{
+        // "src": "assets/Homepage/Section 03/01.jpg",
+          "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+         "link": {
+           "url":"/men/shoes"
+         }
+       }
+     },
+     "link#featured4":{
+       "props":{
+         "label":"mens shoe",
+         "href":"/men/shoes",
+         "blockClass":"link-featured"
+       }
+
+     },
+
+
+     "flex-layout.col#featured3":{
+      "children":[
+        "image#featured4",
+        "link#featured4"
+      ]
+
+    },
+    "image#featured3":{
+      "props":{
+       // "src": "assets/Homepage/Section 03/02.jpg",
+       "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+        "link": {
+          "url":"/men/shoes"
+        }
+      }
+    },
+    "link#featured3":{
+      "props":{
+        "label":"mens shoe",
+        "href":"/men/shoes",
+        "blockClass":"link-featured"
+      }
+
+    },
+
+
+    "flex-layout.col#featured2":{
+      "children":[
+        "image#featured4",
+        "link#featured4"
+      ]
+
+    },
+    "image#featured2":{
+      "props":{
+       // "src": "assets/Homepage/Section 03/03.jpg",
+       "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+        "link": {
+          "url":"/men/shoes"
+        }
+      }
+    },
+    "link#featured2":{
+      "props":{
+        "label":"mens shoe",
+        "href":"/men/shoes",
+        "blockClass":"link-featured"
+      }
+
+    },
+
+
+    "flex-layout.col#featured1":{
+      "children":[
+        "image#featured4",
+        "link#featured4"
+      ]
+
+    },
+    "image#featured1":{
+      "props":{
+        //"src": "assets/Homepage/Section 03/04.jpg",
+        "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+        "link": {
+          "url":"/men/shoes"
+        }
+      }
+    },
+    "link#featured1":{
+      "props":{
+        "label":"mens shoe",
+        "href":"/men/shoes",
+        "blockClass":"link-featured"
+      }
+
+    }, */
+    "info-card#featured4": {
+
+      "props": {
+        "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",       
+        
+        "blockClass":  "info-card-featured",
+        "isFullModeStyle": true,
+        "textPosition": "center",       
+        "callToActionText": "DISCOVER",       
+        "callToActionUrl": "/sale/d",        
+        "textAlignment": "center",
+        "linkTarget":"_self"
+        
+      }              
+       
+      },      
+    
+    "info-card#featured3": {
+      "props": {
+        "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+        "blockClass":  "info-card-featured",
+        "isFullModeStyle": true,
+        "textPosition": "center",       
+        "callToActionText": "DISCOVER",       
+        "callToActionUrl": "/sale/d",        
+        "textAlignment": "center",
+        "linkTarget":"_self"
+        
+      }
+    },
+    "info-card#featured1": {
+      "props": {
+        "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+        "blockClass":  "info-card-featured",
+        "isFullModeStyle": true,
+        "textPosition": "center",       
+        "callToActionText": "DISCOVER",       
+        "callToActionUrl": "/sale/d",        
+        "textAlignment": "center",
+        "linkTarget":"_self"
+       
+       
+      }
+    },
+    "info-card#featured2": {
+      "props": {
+        "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+        "blockClass":  "info-card-featured",
+        "isFullModeStyle": true,
+        "textPosition": "center",       
+        "callToActionText": "DISCOVER",       
+        "callToActionUrl": "/sale/d",        
+        "textAlignment": "center",
+        "linkTarget":"_self"
+        
+      }
+    },
+
+
+
+  /***************************************************/
+
+  "flex-layout.row#favourite": {
+    "children": ["info-card#favourite1", "info-card#favourite2"],
+    "props":{
+      "blockClass":"info-card-favourite-product"
+    }
+  },
+
+  "info-card#favourite1": {
+    "props": {
+      "id": "info-card#featured1",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+     // "imageUrl": "assets/Homepage/Section 05/01.jpg",
+     "imageUrl":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-featured1",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#favourite2": {
+    "props": {
+      "id": "info-card#featured2",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+     // "imageUrl": "assets/Homepage/Section 05/02.jpg",
+     "imageUrl":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "SHOP NOW",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-featured1",
+      "textAlignment": "center"
+    }
+  },
+
+  /***********************/
+
+
+    /***************************************************/
+
+    
+    /*************************/
+
+    "rich-text#shelf-title-3": {
+      "props": {
+        "text": "###  #FLAUNT MASTERCARD",
+        "blockClass": "shelfTitle"
+      }
+      },
+ /************************/
+
+
+ /* social icons*/
+ "flex-layout.row#social":{
+  "children":[
+    "social-networks"
+   ],
+     "props": {
+      
+     "blockClass": "socialicons"
+     }
+ },
+
+/*****************************/
+ 
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"]
+    
+  },
+  "slider-layout#demo-images": {
+    "children": ["info-card#1", "info-card#2"],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "height":720,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "fullWidth":true
+    }
+  },
+  "info-card#1": {
+    "props": {
+      //"imageUrl": "assets/Header.jpg",
+      "imageUrl":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "isFullModeStyle": true,
+      "headline": "BOSS",
+      "subhead":"WEEKLY MUST HAVES",
+      "callToActionMode":"none",
+      "textPosition": "right",
+      "blockClass":"home-carousel"
+    }
+  },
+  "info-card#2": {
+    "props": {
+     // "imageUrl": "assets/Header.jpg",
+     "imageUrl":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "isFullModeStyle": true,
+      "headline": "Black Friday",
+      "callToActionMode":"none",
+      "textPosition": "right",
+      "blockClass":"home-carousel"
+    }
+  },
+  /*
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      
+      "height": 720,
+      "fullWidth":true,
+      "images": [
+        {
+          "image": "assets/Header.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg",
+          "description": "something something"
+        },
+        {
+          "image": "assets/Header.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  */
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "#### FEATURED PRODUCTS",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+     // "imageUrl": "assets/Homepage/Section-04.jpg",
+     "imageUrl":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "headline": "What if we can refine your shopping experience",
+      "callToActionMode":"blank",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+
+
+
+
+
+  "slider-layout#brand": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots":"never",
+      "blockClass": "brand-carousel"
+    },
+    "children": [ 
+      "info-card#brand1",
+      "info-card#brand2"
+      
+      ]
+  },
+  "info-card#brand1": {
+
+    "props": {
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "blockClass": "info-card-brand",
+      "isFullModeStyle": true,
+        "callToActionMode":"none",  
+       "callToActionUrl": "/sale/d" 
+      
+    }              
+     
+    },      
+  
+  "info-card#brand2": {
+    "props": {
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "blockClass": "info-card-brand",
+      "isFullModeStyle": true,
+        "callToActionMode":"none",  
+       "callToActionUrl": "/sale/d" 
+      
+    }
+  },
+  "info-card#brand3": {
+    "props": {
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "blockClass": "info-card-brand",
+      "isFullModeStyle": true,
+        "callToActionMode":"none",  
+       "callToActionUrl": "/sale/d" 
+      
+    }
+  },
+  "info-card#brand4": {
+    "props": {
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "blockClass": "info-card-brand",
+      "isFullModeStyle": true,
+        "callToActionMode":"none",  
+       "callToActionUrl": "/sale/d" 
+      
+    }
+  },
+  "info-card#brand5": {
+
+    
+      "props": {
+        "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+        "blockClass": "info-card-brand",
+        "isFullModeStyle": true,
+          "callToActionMode":"none",  
+         "callToActionUrl": "/sale/d" 
+        
+      }
+    },      
+  
+  "info-card#brand6": {
+    "props": {
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "blockClass": "info-card-brand",
+      "isFullModeStyle": true,
+        "callToActionMode":"none",  
+       "callToActionUrl": "/sale/d" 
+      
+    }
+  },
+  "info-card#brand7": {
+          "props": {
+        "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+        "blockClass": "info-card-brand",
+        "isFullModeStyle": true,
+          "callToActionMode":"none",  
+         "callToActionUrl": "/sale/d" 
+        
+      }
+  },
+  "info-card#brand8": {
+    "props": {
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      "blockClass": "info-card-brand",
+      "isFullModeStyle": true,
+        "callToActionMode":"none",  
+       "callToActionUrl": "/sale/d" 
+      
+    }
+  },
+ 
+
+/*
+
+  "image#brand1": {
+    "props": {
+      //"src": "assets/Homepage/Section 07/Layer 8802.png",
+      "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/boss"
+      }
+    }
+  },
+/*
+  "image#brand2": {
+    "props": {
+      //"src": "assets/Homepage/Section 07/Layer 8803.png",
+      "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/boss"
+      }
+    }
+  },"image#brand3": {
+    "props": {
+      //"src": "assets/Homepage/Section 07/Layer 8804.png",
+      "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+  "image#brand4": {
+    "props": {
+      //"src": "assets/Homepage/Section 07/Layer 8805.png",
+      "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+  "image#brand5": {
+    "props": {
+     // "src": "assets/Homepage/Section 07/Layer 8806.png",
+     "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+  "image#brand6": {
+    "props": {
+      //"src": "assets/Homepage/Section 07/Layer 8807.png",
+      "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+  "image#brand7": {
+    "props": {
+     // "src": "assets/Homepage/Section 07/Layer 8808.png",
+     "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+  "image#brand8": {
+    "props": {
+     // "src": "assets/Homepage/Section 07/Layer 8809.png",
+     "src":"https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+      
+      "blockClass": "info-card-featured1",
+      "link":{
+        "url":"/wishlist"
+      }
+    }
+  },
+*/
+  "rich-text#shelf-title-4": {
+    "props": {
+      "text": "#### SIGNATURE COLLECTIONS",
+      "blockClass": "shelfTitle"
+    }
+    }
+/*********************************/
+
+ 
+
+  
+}

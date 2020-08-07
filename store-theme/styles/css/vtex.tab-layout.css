@@ -1,0 +1,31 @@
+.listContainer{
+    border-bottom: 1px solid gray;
+}
+.listItem{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+
+}
+.listItemChildren{
+color: black;
+
+}
+.container--pdp{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.listContainer--tab-pdp{
+    justify-content: flex-start;
+}
+.listContainer--tab-pdp .listItemActive{
+    border: none;
+    font-weight: bold;
+}
+.listContainer--tab-pdp :global(.vtex-button){
+    background-color: transparent;
+    color: black;
+}
+.contentItem--product-emi{
+    margin-top: 10px;
+    margin-left: 35px;
+}

@@ -1,0 +1,9 @@
+.container{
+    background-color: black;
+}
+.submenuList{
+    justify-content: flex-start;
+}
+.itemContainer--department:last-child{
+    display: none;
+}

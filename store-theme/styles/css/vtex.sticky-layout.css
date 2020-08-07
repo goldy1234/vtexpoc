@@ -1,0 +1,11 @@
+.wrapper--sticky-header{
+    
+    background-color: transparent !important;
+   
+}
+.container--sticky-header{
+    left: 80px;
+    right: 80px;
+   background-color: transparent;
+  
+}

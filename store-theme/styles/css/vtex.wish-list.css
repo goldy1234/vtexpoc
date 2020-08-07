@@ -1,0 +1,11 @@
+.wishlistIconContainer--btn-add-to-wishlist :global(.vtex-button){
+    background-color: transparent;
+    border: none;
+}
+.wishlistIconContainer :global(.vtex-button){
+    border: none;
+}
+
+
+
+

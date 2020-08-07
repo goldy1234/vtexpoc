@@ -1,0 +1,14 @@
+{
+    "store.custom#iframe": {
+    "blocks": [
+      "iframe"
+    ]
+  },
+  "iframe":{
+    "props":{
+      "src":"https://www.youtube.com/embed/9ao4FEaDGhQ",
+      "width":"1000",
+      "height":"400"
+    }
+  }
+}
