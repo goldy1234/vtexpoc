@@ -1,7 +1,7 @@
 {
-  "vendor": "vtex",
-  "name": "store-theme",
-  "version": "3.37.0",
+  "vendor": "born",
+  "name": "luxury-store-theme",
+  "version": "0.0.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -18,8 +18,7 @@
     "vtex.search": "1.x",
     "vtex.iframe": "0.x",
     "vtex.recommendation-shelf": "0.x",
-    "vtex.countdown": "0.x",
-    "vtex.tab-layout": "0.x",
+    "born.sizechart": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",

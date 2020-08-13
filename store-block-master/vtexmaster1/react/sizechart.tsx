@@ -1,8 +1,8 @@
 import React from 'react'
-interface CountdownProps { 
+interface SizechartProps { 
   productType: string
 }
-const Countdown: StorefrontFunctionComponent<CountdownProps> = ({ productType }) => {
+const Sizechart: StorefrontFunctionComponent<SizechartProps> = ({ productType }) => {
   let breadcrumb = document.getElementsByClassName("vtex-breadcrumb-1-x-link").length - 1
   let getClass = "vtex-breadcrumb-1-x-link--"+breadcrumb
   let requiredHref = document.getElementsByClassName(getClass)[0].getAttribute("href")
@@ -22,9 +22,9 @@ const Countdown: StorefrontFunctionComponent<CountdownProps> = ({ productType })
   }
   return <div></div>
 }
-Countdown.schema = {
-  title: 'editor.countdown.title',
-  description: 'editor.countdown.description',
+Sizechart.schema = {
+  title: 'editor.sizechart.title',
+  description: 'editor.sizechart.description',
   type: 'object',
   properties: {
     productType:{
@@ -35,4 +35,4 @@ Countdown.schema = {
     }
   },
 }
-export default Countdown
+export default Sizechart

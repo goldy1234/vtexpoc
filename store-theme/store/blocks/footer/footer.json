@@ -42,7 +42,8 @@
   "newsletter":{
     "props":{
       "label":"NEWSLETTER SIGN UP",
-      "submit":"SUBMIT"
+      "submit":"SUBMIT",
+      "blockClass": "test"
     }
   },
 

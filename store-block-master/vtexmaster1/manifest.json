@@ -1,9 +1,9 @@
 {
-  "vendor": "vtex",
-  "name": "countdown",
+  "vendor": "born",
+  "name": "sizechart",
   "version": "0.0.1",
-  "title": "Countdown",
-  "description": "Countdown component",
+  "title": "Size Chart",
+  "description": "Size Chart component",
   "defaultLocale": "pt-BR",
   "builders": {
     "messages": "1.x",

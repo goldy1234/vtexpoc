@@ -10,10 +10,13 @@
 
 }
 .searchBarInnerContainer :global(.vtex-input-prefix__group){
+  
   border: 1px solid gray;
+  
 }
 .searchIcon{
   color: gray;
+  
 }
 
 
@@ -50,20 +53,26 @@
 .newsletter {  
   margin: 0 auto;
   margin-top: 3px;
+  background-color: transparent;
+ 
 }
 
 .newsletter .container {
   padding-top: 5%;
   width: 100%;
+  margin-left: 50px;
 
 }
-
+.newsletter :global(.vtex-input-prefix__group ){
+  margin-left:-215px;
+}
 
 
 .inputGroup {
   padding-bottom: 4px;
   display: flex;
   color: #000;
+  
 
 }
 
@@ -108,17 +117,21 @@
     
     font-weight: 700;
     font-size: 16px;
-    margin-left: -100px;
-
+    margin-left: -181px;
+    
     
   }
    
   .newsletter .container .form .inputGroup{
     width: 100%;
+    
+    
+    
   }
 
   .label {
     font-size: 40px;
+   
   }
   .infoCardContainer--info-card-home .infoCardHeadline{
     font-family: cursive;
@@ -126,6 +139,8 @@
 
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
+
+    
     
   }
 

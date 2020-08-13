@@ -103,9 +103,11 @@
 }
 .searchResultContainer{
     padding-top: 0%;
-    margin-left: 23px;
-    margin-right: 23px;
+    margin-left: 27px;
+    margin-right: 27px;
     overflow: hidden;
+    max-width: none;
+    padding: unset;
 }
 .container--layout{
     margin-left: 53px;

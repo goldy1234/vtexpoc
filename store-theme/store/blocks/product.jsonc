@@ -21,7 +21,7 @@
   //     "recommendation":"view"
   //   }
   // },
-  "countdown":{
+  "sizechart":{
     "props":{
       "productType":"breadcrumb"
     }
@@ -36,7 +36,7 @@
     }
   },
   "modal-layout#size-chart":{
-    "children":["countdown"]
+    "children":["sizechart"]
   },
   "flex-layout.row#product-breadcrumb": {
     "props": {

@@ -4,8 +4,7 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "category-menu"
-     
+      "category-menu"  
       
     ]
   },
